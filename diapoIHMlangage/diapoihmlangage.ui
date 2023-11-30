@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DiapoIHMlangage</class>
+ <widget class="QWidget" name="DiapoIHMlangage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>311</width>
+    <height>484</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DiapoIHMlangage</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>431</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Langages</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>231</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="labelEntrezCode">
+      <property name="text">
+       <string>Entrez votre code :</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditEntrezCode">
+      <property name="styleSheet">
+       <string notr="true">background-color : rgb(79, 249, 233)</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButtonQuitter">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>310</y>
+     <width>80</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : rgb(204, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>170</y>
+     <width>213</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QCheckBox" name="checkBoxLinux">
+        <property name="text">
+         <string>Linux</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButtonLinux">
+        <property name="text">
+         <string>Linux</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QCheckBox" name="checkBoxWindows">
+        <property name="text">
+         <string>Windows</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButtonWindows">
+        <property name="text">
+         <string>Windows</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QCheckBox" name="checkBoxLion">
+        <property name="text">
+         <string>OS X Lion</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButtonLion">
+        <property name="text">
+         <string>OS X Lion</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>250</y>
+     <width>254</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QPushButton" name="pushButtonLinux">
+      <property name="text">
+       <string>Linux</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonWindows">
+      <property name="text">
+       <string>Windows</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonLion">
+      <property name="text">
+       <string>OS X Lion</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>120</y>
+     <width>154</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="labelChoix">
+      <property name="text">
+       <string>Choix</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBoxChoix">
+      <item>
+       <property name="text">
+        <string>Linux</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Windows</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mac</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonQuitter</sender>
+   <signal>clicked()</signal>
+   <receiver>DiapoIHMlangage</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>307</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>167</x>
+     <y>314</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

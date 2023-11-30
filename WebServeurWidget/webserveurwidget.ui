@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WebServeurWidget</class>
+ <widget class="QWidget" name="WebServeurWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>375</width>
+    <height>297</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WebServeurWidget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTextEdit" name="textEditAfficheur"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonQuitter">
+       <property name="text">
+        <string>Quitter</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonQuitter</sender>
+   <signal>clicked()</signal>
+   <receiver>WebServeurWidget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>271</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WidgetUSB202</class>
+ <widget class="QWidget" name="WidgetUSB202">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>397</width>
+    <height>107</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>15</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>WidgetUSB202</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_Quitter">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>30</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>111</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_BP1">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 0, 0)</string>
+        </property>
+        <property name="text">
+         <string>BP1</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_LED1">
+        <property name="text">
+         <string>LED1</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_BP2">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 0, 0)</string>
+        </property>
+        <property name="text">
+         <string>BP2</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="indent">
+         <number>3</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_LED2">
+        <property name="text">
+         <string>LED2</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_Quitter</sender>
+   <signal>clicked()</signal>
+   <receiver>WidgetUSB202</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

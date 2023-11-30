@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AuditServeurMultiWidget</class>
+ <widget class="QWidget" name="AuditServeurMultiWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>396</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AuditServeurMultiWidget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Numéro de port</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBoxNumeroPort_3">
+           <property name="maximum">
+            <number>9999</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonLancementServeur_3">
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Lancement serveur</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Informations</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="textEditLogs_3"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonQuitter_3">
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Quitter</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

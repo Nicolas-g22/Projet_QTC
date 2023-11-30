@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AuditClientWidget</class>
+ <widget class="QWidget" name="AuditClientWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>752</width>
+    <height>477</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AuditClientWidget</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>711</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Connexion au serveur</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>417</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Adresse IP du serveur :</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>53</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditAdresseIP"/>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Numéro de port du serveur :</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditPort"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButtonConnexion">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>130</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Connexion</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonQuitter">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Quitter</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>30</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Etat de la connexion</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditEtat">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>50</y>
+      <width>241</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBoxInformationsClient">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>711</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Informations Client</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>661</width>
+      <height>147</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButtonOrdinateur">
+         <property name="text">
+          <string>Nom de l'ordinateur distant</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonUtilisateur">
+         <property name="text">
+          <string>Nom de l'utilisateur</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonArchitecture">
+         <property name="text">
+          <string>Architecture processeur</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonOS">
+         <property name="text">
+          <string>Os de l'ordinateur</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="lineEditOrdinateur"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditUtilisateur"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditArchitecture"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditOS"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonQuitter</sender>
+   <signal>clicked()</signal>
+   <receiver>AuditClientWidget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>168</x>
+     <y>237</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

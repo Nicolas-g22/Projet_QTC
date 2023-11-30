@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IHM_TP1</class>
+ <widget class="QWidget" name="IHM_TP1">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>545</width>
+    <height>466</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>545</width>
+    <height>466</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>545</width>
+    <height>466</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>IHM_TP1</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>40</y>
+     <width>401</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="InfoPerso">
+    <attribute name="title">
+     <string>Information personnelles</string>
+    </attribute>
+    <widget class="QPushButton" name="pushButtonSuite">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>260</y>
+       <width>80</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Suite</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>40</y>
+       <width>201</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="labelNom">
+          <property name="text">
+           <string>Nom</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditNom"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="labelPrenom">
+          <property name="text">
+           <string>Prénom</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditPrenom"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="labelSexe">
+          <property name="text">
+           <string>Sexe</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButtonFemme">
+          <property name="text">
+           <string>Femme</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButtonHomme">
+          <property name="text">
+           <string>Homme</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="labelAge">
+          <property name="text">
+           <string>Age</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinBoxAge">
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>200</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="labelPoids">
+          <property name="text">
+           <string>Poids (kg)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBoxPoids">
+          <property name="minimum">
+           <double>15.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>300.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="labelTaille">
+          <property name="text">
+           <string>Taille (m)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="doubleSpinBoxTaille">
+          <property name="minimum">
+           <double>0.500000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>3.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.010000000000000</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="CalculPoids">
+    <attribute name="title">
+     <string>Calcul du poids ideal</string>
+    </attribute>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>381</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QTextEdit" name="textEditAfficheur"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QPushButton" name="pushButtonDevine">
+            <property name="text">
+             <string>Poids idéal formule de devine</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonLorentz">
+            <property name="text">
+             <string>Poids idéal formule de lorentz</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonFonctionAge">
+            <property name="text">
+             <string>Poids idéal formule de lorentz en fonction de l'age</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButtonQuitter">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>410</y>
+     <width>80</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonQuitter</sender>
+   <signal>clicked()</signal>
+   <receiver>IHM_TP1</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>261</x>
+     <y>425</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>152</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

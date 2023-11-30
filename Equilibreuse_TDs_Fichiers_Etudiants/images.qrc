@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/Croix.png</file>
+        <file>images/Enregistrer.png</file>
+        <file>images/Equilibreuse.ico</file>
+        <file>images/Excel.png</file>
+        <file>images/Information.png</file>
+        <file>images/LogoPdf.png</file>
+        <file>images/Maquette.png</file>
+        <file>images/Nouveau.png</file>
+        <file>images/Ouvrir.png</file>
+        <file>images/Parmetres.png</file>
+        <file>images/Quitter.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogParametrageEquilibreuse</class>
+ <widget class="QDialog" name="DialogParametrageEquilibreuse">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>966</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Paramètrage de l'équilibreuse</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>901</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableWidget" name="tableWidgetJauges">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>false</bool>
+      </property>
+      <property name="textElideMode">
+       <enum>Qt::ElideMiddle</enum>
+      </property>
+      <row>
+       <property name="text">
+        <string>Jauge de contrainte A</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Jauge de contrainte O</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Modèle</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Date</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>numéro de série</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Capacité en lbs</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>sensibilité en mV/V</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidgetConditionneur">
+      <property name="textElideMode">
+       <enum>Qt::ElideMiddle</enum>
+      </property>
+      <row>
+       <property name="text">
+        <string>Conditionneur A</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Conditionneur O</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Tension pleine echelle en V</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Calibrage en mV</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Tension calibrage en V</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidgetFiltre">
+      <property name="textElideMode">
+       <enum>Qt::ElideMiddle</enum>
+      </property>
+      <row>
+       <property name="text">
+        <string>Filtre A</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Filtre O</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Coefficient atténuation</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Ordonnée atténuation</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Coefficient déphasage</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Ordonnée déphasage</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>580</y>
+     <width>511</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Nom de l'établissement :</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditEtablissement">
+      <property name="text">
+       <string>Lycée Touchard-Washington</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>620</y>
+     <width>511</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Vitesse maximale du moteur en tours par minute :</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditVitesse">
+      <property name="text">
+       <string>2000</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>590</y>
+     <width>374</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_6">
+    <item>
+     <widget class="QPushButton" name="pushButtonEnregistrer">
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Enregistrer</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonAnnuler">
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Annuler</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonAnnuler</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogParametrageEquilibreuse</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>795</x>
+     <y>601</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>763</x>
+     <y>534</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
